@@ -14,7 +14,6 @@ public class Terrain {
 		initiateItems();
 		try {
 			s = new Scanner(new File(filename));
-			System.out.println("reading file sted.txt");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -36,7 +35,6 @@ public class Terrain {
 	public void initiateItems() {
 		try {
 			s = new Scanner(new File("gjenstander.txt"));
-			System.out.println("reading file gjenstander.txt");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

@@ -16,7 +16,8 @@ public class Place {
 	}
 	public Place moveForward(List<Place> l) {//not so sure
 		int index = l.indexOf(this);
-		System.out.println("moves to "+(index+1)%l.size());
+		int newindex = (index+1)%l.size();
+		System.out.println("*****moves to "+newindex+"."+l.get(newindex).m);
 		return l.get((index+1)%l.size());		
 	}
 

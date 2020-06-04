@@ -23,7 +23,7 @@ public class Terminal implements UserInterface {
 		}catch( Exception e){
 			System.out.println(e.getMessage());
 		}
-		System.out.println("User A choose option "+a+" "+ options[a]);
+		System.out.println("[You have chosen option "+a+" "+ options[a]+"]");
 		return a;
 	}
 

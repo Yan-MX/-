@@ -57,9 +57,9 @@ public class Player {
 		case 0:// player sell one item to the treasure chest in this place
 			Item b = backpack.remove();
 			fortune-=b.value;
-			System.out.println("Selling "+b.name+ ", lose fortune- "+b.value);
+			System.out.print("Selling "+b.name+ ", lose fortune- "+b.value);
 			double c= place.chest.add(b);
-			System.out.println("Receive money from Treasure Chest, gain fortune+ "+c);
+			System.out.println(" Receive money from Treasure Chest, gain fortune+ "+c);
 			fortune+=c;
 			break;
 		case 1:

@@ -13,7 +13,7 @@ public class Robot implements UserInterface {
 	public int askForCommand(String question, String[] options) {
 		Random ran = new Random();//Instance of random class
 		int int_ran = ran.nextInt(options.length);
-		System.out.println("Robot choose "+ int_ran+"."+options[int_ran]);
+		System.out.println("[Robot choose "+ int_ran+"."+options[int_ran]+"]");
 		return int_ran;
 	}
 	
